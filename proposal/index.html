@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💌 A Special Message for You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Lora:ital,wght@0,400;1,400&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ═══ SCREEN 1: LANDING ═══ -->
+    <section id="s-landing" class="screen active">
+        <div id="star-bg" class="bg-layer"></div>
+        <div id="heart-bg" class="bg-layer"></div>
+        <div class="center-col">
+            <p class="subtitle">Someone has a very special message for you…</p>
+            <div id="env-wrap" class="env-wrap">
+                <div id="env" class="env">
+                    <div class="env-flap"></div>
+                    <div class="env-body"><span class="env-icon">💌</span></div>
+                </div>
+                <p class="hint-text">✦ Click to open ✦</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SCREEN 2: LETTER ═══ -->
+    <section id="s-letter" class="screen">
+        <div class="bg-layer star-layer"></div>
+        <div class="letter-wrap">
+            <div class="letter-paper">
+                <div class="letter-deco">💕 ✨ 💕</div>
+                <p class="letter-dear">My Dearest,</p>
+                <p id="letter-body" class="letter-body"></p>
+                <p class="letter-close">With all my heart,</p>
+                <p class="letter-sig">— Someone who adores you 💖</p>
+                <button id="btn-next" class="btn-rose" style="display:none">The Big Question →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SCREEN 3: PROPOSAL ═══ -->
+    <section id="s-proposal" class="screen">
+        <div class="bg-layer star-layer"></div>
+        <div class="center-col">
+            <div class="big-heart">💖</div>
+            <h1 id="prop-q" class="prop-text"></h1>
+            <p class="prop-sub">You make my world brighter every single day.</p>
+            <div class="prop-btns">
+                <button id="btn-yes" class="btn-yes">Yes! 💍</button>
+                <button id="btn-no" class="btn-no">Maybe later…</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SCREEN 4: CELEBRATE ═══ -->
+    <section id="s-celebrate" class="screen">
+        <canvas id="confetti"></canvas>
+        <div class="center-col">
+            <div class="celebrate-icon">🥂</div>
+            <h1 id="cel-title" class="cel-title"></h1>
+            <p class="cel-sub">This is just the beginning of our beautiful story.</p>
+            <div id="cel-hearts" class="cel-hearts"></div>
+            <a id="wa-btn" class="btn-wa" href="#" target="_blank" rel="noopener" style="display:none">
+                💌 Send my answer to him!
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
